@@ -1,0 +1,40 @@
+.carousel img {
+    opacity: 0.8;
+}
+.h2-title-1 {
+    background: #ff2a6b;
+    padding: 10px 21px;
+    font-size: 72px;
+    z-index: 3;
+}
+.h2-title-2 {
+    font-size: 48px;
+    background-color: orange;
+    padding: 10px 21px;
+}
+.h2-title-3 {
+    font-size: 36px;
+    background-color: lightgreen;
+    padding: 10px 21px;
+}
+.h2-title-1 , .h2-title-2 , .h2-title-3 {
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: -1px -5px 20px 0px rgb(0 0 0 / 30%);
+    font-weight: bold;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.carousel-caption {
+    text-align: center;
+    top: 50% ;
+    transform: translateY(-50%);
+    bottom: initial;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    
+}
+  
