@@ -11,33 +11,33 @@ import image5 from '../images/pizza.jpg';
 const Blog = () => {
     const blogs = [
         {
-            image: { image5 },
+            image: image5 ,
             title: "Mozarella Chese Pizza",
             content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
         },
         {
-            image: { image3 },
+            image: image3 ,
             title: "Italian Chicken Pasta",
             content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
 
         },
         {
-            image: { image },
+            image: image ,
             title: "Cheese Cake Tart",
             content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
         },
         {
-            image: { image2 },
+            image: image2 ,
             title: "Spaghetti Bolognese",
             content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
         },
         {
-            image: { image4 },
+            image: image4 ,
             title: "Italian Cream Cake",
             content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
         },
         {
-            image: { image1 },
+            image: image1 ,
             title: "Crispy Chicken Fries",
             content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
         },
