@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../Header/Header';
-import About from '../About/About';
+import TopRecipes from '../Top Recipes/TopRecipes';
 
 const Home = () => {
     return (
         <div>
             <Header />
-           
+            <TopRecipes />
         </div>
     );
 };
