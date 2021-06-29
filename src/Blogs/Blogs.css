@@ -1,0 +1,9 @@
+.blogs p {
+    width: 50%;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.blogs h5 {
+    font-weight: bold;
+}

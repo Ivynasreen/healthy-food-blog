@@ -5,8 +5,8 @@ import HeaderMain from '../HeaderMain/HeaderMain';
 const Header = () => {
     return (
         <div>
-           <Navbar /> 
-           <HeaderMain />
+            <Navbar />
+            <HeaderMain />
         </div>
     );
 };

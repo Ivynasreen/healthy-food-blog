@@ -1,0 +1,42 @@
+.about-section {
+    text-align: center;
+}
+.set-bg {
+    background-image: url("https://i2.wp.com/www.jagerfoods.com/wp-content/uploads/2018/02/Food-Blogs.jpg?resize=700%2C366&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about-section h2 {
+    font-size: 72px;
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    padding: 5px 30px;
+    margin: 68px 0;
+    border-radius: 4px;
+    background: darkred;
+    -webkit-box-shadow: 0 90px 100px rgb(0 0 0 / 40%);
+    box-shadow: 0 90px 100px rgb(0 0 0 / 40%);
+}
+.site-btn {
+    display: inline-block;
+    min-width: 178px;
+    text-align: center;
+    border: none;
+    padding: 18px 5px;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    background: darkred;
+    margin-bottom: 50px;
+}

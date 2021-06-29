@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Blog.css';
 import Blogs from '../Blogs/Blogs';
 import image from '../images/cake.jpg';
@@ -9,39 +9,46 @@ import image4 from '../images/pastry.jpg';
 import image5 from '../images/pizza.jpg';
 
 const Blog = () => {
-    const blogs = [
-        {
-            image: image5 ,
-            title: "Mozarella Chese Pizza",
-            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
-        },
-        {
-            image: image3 ,
-            title: "Italian Chicken Pasta",
-            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
+    const[blogs , setBlogs] = useState([]);
 
-        },
-        {
-            image: image ,
-            title: "Cheese Cake Tart",
-            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
-        },
-        {
-            image: image2 ,
-            title: "Spaghetti Bolognese",
-            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
-        },
-        {
-            image: image4 ,
-            title: "Italian Cream Cake",
-            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
-        },
-        {
-            image: image1 ,
-            title: "Crispy Chicken Fries",
-            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
-        },
-    ]
+    useEffect(()=> {
+        fetch('http://localhost:5500/blog')
+        .then(res=> res.json())
+        .then(data=> setBlogs(data))
+    }, []) 
+    // const blogs = [
+    //     {
+    //         image: image5 ,
+    //         title: "Mozarella Chese Pizza",
+    //         content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit "
+    //     },
+    //     {
+    //         image: image3 ,
+    //         title: "Italian Chicken Pasta",
+    //         content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. "
+
+    //     },
+    //     {
+    //         image: image ,
+    //         title: "Cheese Cake Tart",
+    //         content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
+    //     },
+    //     {
+    //         image: image2 ,
+    //         title: "Spaghetti Bolognese",
+    //         content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
+    //     },
+    //     {
+    //         image: image4 ,
+    //         title: "Italian Cream Cake",
+    //         content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
+    //     },
+    //     {
+    //         image: image1 ,
+    //         title: "Crispy Chicken Fries",
+    //         content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
+    //     },
+    // ]
 
     return (
         <div className="blog">
